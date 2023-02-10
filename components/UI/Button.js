@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   button: {
     flex: 1,
     backgroundColor: '#414141',
-    height: Math.floor(buttonWidth - 10),
+    height: Math.floor(buttonWidth),
     borderRadius: Math.floor(buttonWidth),
     alignItems: 'center',
     justifyContent: 'center',
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#fff',
-    fontSize: 36,
+    fontSize: 42,
   },
   darkText: {
     color: '#333',
