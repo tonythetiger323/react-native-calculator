@@ -32,6 +32,10 @@ export default function App() {
     }
 
     if (type === 'dot') {
+      if (!currVal.toString().includes('.')) {
+        setCurrVal(+currVal.toString() + '.');
+        return;
+      }
       return;
     }
   };
