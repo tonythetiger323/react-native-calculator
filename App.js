@@ -20,7 +20,6 @@ export default function App() {
     }
 
     if (type === 'operator') {
-      return;
     }
 
     if (type === 'number') {
@@ -64,7 +63,7 @@ export default function App() {
           <Button
             color='accent'
             text='/'
-            onPress={handlePress.bind(this, 'operator')}
+            onPress={handlePress.bind(this, 'operator', '/')}
           />
         </View>
         <View style={styles.row}>
@@ -74,7 +73,7 @@ export default function App() {
           <Button
             color='accent'
             text='x'
-            onPress={handlePress.bind(this, 'operator')}
+            onPress={handlePress.bind(this, 'operator', 'x')}
           />
         </View>
         <View style={styles.row}>
@@ -84,7 +83,7 @@ export default function App() {
           <Button
             color='accent'
             text='-'
-            onPress={handlePress.bind(this, 'operator')}
+            onPress={handlePress.bind(this, 'operator', '-')}
           />
         </View>
         <View style={styles.row}>
@@ -94,7 +93,7 @@ export default function App() {
           <Button
             color='accent'
             text='+'
-            onPress={handlePress.bind(this, 'operator')}
+            onPress={handlePress.bind(this, 'operator', '+')}
           />
         </View>
         <View style={styles.row}>
@@ -107,7 +106,7 @@ export default function App() {
           <Button
             color='accent'
             text='='
-            onPress={handlePress.bind(this, 'operator')}
+            onPress={handlePress.bind(this, 'operator', '=')}
           />
         </View>
       </SafeAreaView>
