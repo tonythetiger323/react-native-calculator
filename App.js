@@ -5,6 +5,7 @@ import Button from './components/UI/Button';
 
 export default function App() {
   const [currVal, setCurrVal] = useState(0);
+  const [prevVal, setPrevVal] = useState();
 
   const handlePress = (type, val) => {
     if (type === 'clear') {
@@ -20,6 +21,9 @@ export default function App() {
     }
 
     if (type === 'operator') {
+      switch (val) {
+        case '/':
+      }
     }
 
     if (type === 'number') {
