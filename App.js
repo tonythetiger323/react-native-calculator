@@ -42,6 +42,27 @@ export default function App() {
       }
       return;
     }
+
+    if (type === 'equal') {
+      switch (operator) {
+        case '/':
+          setCurrVal(prevVal / currVal);
+          setPrevVal(0);
+          setOperator(null);
+        case 'x':
+          setCurrVal(prevVal * currVal);
+          setPrevVal(0);
+          setOperator(null);
+        case '-':
+          setCurrVal(prevVal - currVal);
+          setPrevVal(0);
+          setOperator(null);
+        case '+':
+          setCurrVal(prevVal + currVal);
+          setPrevVal(0);
+          setOperator(null);
+      }
+    }
   };
 
   return (
