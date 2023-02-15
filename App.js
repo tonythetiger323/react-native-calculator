@@ -22,6 +22,9 @@ export default function App() {
     }
 
     if (type === 'operator') {
+      setPrevVal(currVal);
+      setOperator(val);
+      setCurrVal(0);
     }
 
     if (type === 'number') {
@@ -108,7 +111,7 @@ export default function App() {
           <Button
             color='accent'
             text='='
-            onPress={handlePress.bind(this, 'operator', '=')}
+            onPress={handlePress.bind(this, 'equal')}
           />
         </View>
       </SafeAreaView>
